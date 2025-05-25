@@ -1,7 +1,14 @@
 
-# 前言
+
+
+## 前言
 看bilibili视频后跟做的笔记。
 
+## 目录
+1. [08-场景资源](#08-场景资源)
+2. [09-场景视图和游戏视图](#09-场景视图和游戏视图)
+3. [10-游戏对象节点](#10-游戏对象节点)
+4. [11-坐标系](#11-坐标系)
 ## 版本
 - Godot_v4.4.1
 
@@ -17,7 +24,7 @@
 - 鼠标滚轮，放大/缩小视图
 - 空格键(或按住鼠标滚轮)可鼠标拖拽，用于移动视图（默认与版本相关，教学视频中的版本鼠标右键即可拖拽）
 - 网格，每个大网格包含8\*8小网格，每个小网格8\*8像素  
-![alt text](/notes/images/grid.png)
+![grid](/notes/images/grid.png)
 
 ## 10 游戏对象（节点）
 - 游戏对象 即节点（Node），它是所有场景对象的基类，场景中包含的内容都是节点。
@@ -32,11 +39,25 @@
 - 右是x正向，下是y正向；
 - 移动对象可以用鼠标、键盘方向或手动修改position的坐标x和y；  
 - 游戏对象移动后，检查器（inspector）中的坐标会发生变化  
-![alt text](/notes/images/inspector_position.png)
+![inspector_position](/notes/images/inspector_position.png)
 
 - 世界坐标系，原点无法改变，暂时可以认为在左上角
 >向下y正向，向右x正向。
 
 - 相对坐标系，又称局部坐标系或本地坐标系，相对于父节点的坐标，godot的坐标都是相对坐标  
-![alt text](/notes/images/relative_position.png)
+![relative_position](/notes/images/relative_position.png)
 
+## 12 节点的基础操作
+场景视图上方的工具栏，可以切换操作模式。
+- Q. 选择模式，基础且综合的工具，几乎包含了所有其他模式的功能
+
+![select_mode](/notes/images/select_mode.png)  
+>缩放功能
+>* 直接缩放，拖拽目标周围缩放点
+>* alt + 缩放，不改变轴心
+>* shift + 缩放，保持比例
+>* alt + shift + 缩放，结合以上两种特点
+
+
+- 其他模式（缩放、旋转、移动），单一的功能
+- 选中对象，鼠标移动到场景视图按f，可将该对象居中显示。
