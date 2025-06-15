@@ -1,7 +1,7 @@
-# 导入环节
-[官方文档链接](https://docs.godotengine.org/en/stable/getting_started/workflow/importing_assets.html)
+# 导入流程
+[官方文档链接](https://docs.godotengine.org/en/stable/tutorials/assets_pipeline/import_process.html)
 ## 1. 导入资源
-要在Godot中导入资源，需要将资源（图片、场景、音频、字体等等）直接放入工程文件夹中。有两种方式可以导入资源：
+要在Godot中导入资源，需要`将资源（图片、场景、音频、字体等等）直接放入工程文件夹中`。有两种方式可以导入资源：
 - 对于任意的资源类型：用系统自带的文件管理器手动拷贝。
 - 有部分Godot可导入的文件类型：直接从系统的文件管理器拖拽到Godot编辑器的`文件系统`窗口（Dock Window）中。此操作只适用于资源文件类型（即Godot能够导入的文件类型）。
 
@@ -15,7 +15,7 @@ Godot会在内部自动导入这些文件，并将导入的资源隐藏在`res:/
 
 ## 2. 变更导入参数
 >导入参数仅存在于Godot非原生资源类型中。
-这意味着，Godot自身的场景、资源文件格式（.tscn、.scn、.tres、.res）没有可在导入窗口选择的导入项。
+这意味着，Godot自身的场景、资源文件格式（.tscn、.scn、.tres、.res）没有可在导入窗口选择的导入选项。
 
 要更改资源的导入参数，在`文件系统`窗口中选中相关资源：  
 ![change_parameters](/notes/images/change_parameters.png)  
